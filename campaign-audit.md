@@ -57,3 +57,5 @@ Result: 25 checks passed with zero recorded errors.
 ## Publication boundary
 
 GitHub accepted the source commits but did not create an Actions workflow run from connector-authored commits. Therefore repository integrity and local QA are verified, but Pages deployment, live-route retrieval, and live PDF-response verification are not claimed.
+
+A manual `Generate PDFs and publish campaign` workflow is committed. A human-triggered run will generate all five PDFs, enforce exact page-count contracts, commit the PDFs, and deploy the complete repository to GitHub Pages in the same run.
