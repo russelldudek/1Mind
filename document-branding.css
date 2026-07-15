@@ -1,0 +1,165 @@
+/* Refined document branding and page balance */
+.doc-header {
+  align-items:start;
+  border-bottom:0;
+  padding-bottom:15px;
+  margin-bottom:20px;
+  position:relative;
+}
+.doc-header::after {
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:5px;
+  background:linear-gradient(90deg,var(--brand-purple) 0 76%,var(--memory-lime) 76% 100%);
+}
+.doc-company-lockup {
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:8px;
+  margin-bottom:7px;
+  color:var(--brand-black);
+}
+.doc-company-lockup > div { text-align:left; }
+.doc-brand-dot {
+  display:inline-block;
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  background:var(--brand-purple);
+  box-shadow:inset 4px 0 0 rgba(255,255,255,.38);
+  flex:none;
+}
+.doc-brand-word {
+  display:block;
+  font:800 24px/.9 var(--display);
+  letter-spacing:-.06em;
+}
+.doc-brand-caption {
+  display:block;
+  margin-top:4px;
+  font:700 7.6px/1 var(--body);
+  color:var(--brand-purple-deep);
+  text-transform:uppercase;
+  letter-spacing:.11em;
+  white-space:nowrap;
+}
+.doc-nameplate h1 { font-size:34px; }
+.doc-contact { min-width:285px; }
+.cover-title {
+  align-items:center;
+  margin:0 0 20px;
+  padding:15px 17px 14px;
+  background:linear-gradient(100deg,var(--brand-lavender),#fbf8fd 68%);
+  border-left:5px solid var(--brand-purple);
+}
+.cover-title h2 { font-size:25px; }
+.role-kicker {
+  display:block;
+  margin-bottom:5px;
+  color:var(--brand-purple-deep);
+  font:800 8.6px/1 var(--body);
+  text-transform:uppercase;
+  letter-spacing:.14em;
+}
+.cover-thesis {
+  margin:6px 0 0 !important;
+  text-align:left !important;
+  color:var(--brand-black) !important;
+  font-size:10px !important;
+  font-weight:700;
+}
+.cover-recipient { line-height:1.45; }
+.cover-body { font-size:11.35px; line-height:1.57; }
+.cover-body p { margin-bottom:14px; }
+.cover-signature { margin-top:17px; }
+.continuation-header {
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:24px;
+  align-items:center;
+  border-bottom:0;
+  padding-bottom:12px;
+  margin-bottom:18px;
+  position:relative;
+}
+.continuation-header::after {
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:4px;
+  background:linear-gradient(90deg,var(--brand-purple) 0 76%,var(--memory-lime) 76% 100%);
+}
+.mini-brand { display:flex; align-items:center; gap:7px; white-space:nowrap; }
+.mini-brand strong { font:800 18px/1 var(--display); letter-spacing:-.05em; }
+.mini-brand em { padding-left:8px; border-left:1px solid var(--border); font-style:normal; font-size:8px; color:var(--brand-purple-deep); text-transform:uppercase; letter-spacing:.09em; }
+.continuation-contact { text-align:right; }
+.continuation-contact strong { display:block; font:700 14px/1 var(--display); }
+.continuation-contact span { display:block; margin-top:4px; font-size:8.6px; }
+.operating-memory-ribbon {
+  margin-top:18px;
+  padding:13px 15px 14px;
+  background:var(--brand-black);
+  color:white;
+  border-left:6px solid var(--brand-purple);
+  break-inside:avoid;
+}
+.memory-ribbon-title {
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:16px;
+  padding-bottom:9px;
+  border-bottom:1px solid rgba(255,255,255,.16);
+}
+.memory-ribbon-title span {
+  font:800 10px/1 var(--body);
+  color:var(--memory-lime);
+  text-transform:uppercase;
+  letter-spacing:.12em;
+}
+.memory-ribbon-title strong { font:700 10.5px/1.2 var(--display); }
+.memory-ribbon-steps {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:7px;
+  margin-top:10px;
+  font-size:8.5px;
+}
+.memory-ribbon-steps span {
+  padding:5px 7px;
+  border:1px solid rgba(255,255,255,.22);
+  border-radius:999px;
+  white-space:nowrap;
+}
+.memory-ribbon-steps b { color:var(--memory-lime); font-size:11px; }
+@media print {
+  .cover-body { font-size:11.35px; line-height:1.57; }
+  .operating-memory-ribbon { margin-top:16px; }
+}
+
+/* Integrate the final page marker into the branded operating-memory ribbon. */
+.resume-page-two .page-footer { display:none; }
+.resume-page-two .operating-memory-ribbon { position:relative; padding-bottom:18px; }
+.resume-page-two .operating-memory-ribbon::after {
+  content:"Russell Dudek · AI Operations Lead candidate";
+  position:absolute;
+  left:15px;
+  bottom:5px;
+  font-size:7px;
+  color:rgba(255,255,255,.48);
+}
+.resume-page-two .operating-memory-ribbon::before {
+  content:"2 / 2";
+  position:absolute;
+  right:15px;
+  bottom:5px;
+  font-size:7px;
+  color:rgba(255,255,255,.48);
+}
