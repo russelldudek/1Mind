@@ -1,0 +1,83 @@
+  .work-circuit { max-width:430px; }
+  .plan-rail { grid-template-columns:1fr; }
+  .plan-phase { border-right:0; border-bottom:1px solid var(--border); }
+  .doc-links { grid-template-columns:1fr 1fr; }
+  .doc-links a { border-bottom:1px solid rgba(17,17,19,.2); }
+}
+@media (max-width: 700px) {
+  .site-header { padding:14px 18px; }
+  .brand-context { display:none; }
+  .hero { padding:54px 20px 70px; gap:40px; }
+  .company-identity { margin-bottom:28px; }
+  .hero h1 { font-size:52px; }
+  .hero-proof { grid-template-columns:1fr; }
+  .memory-stage { min-height:430px; }
+  .memory-ring { width:88vw; }
+  .ring-node { width:96px; padding:9px; }
+  .ring-node strong { font-size:11px; }
+  .ring-node span { font-size:9px; }
+  .section { padding:78px 20px; }
+  .section h2 { font-size:45px; }
+  .tension-row { grid-template-columns:1fr; gap:6px; }
+  .tension-row .versus { text-align:left; }
+  .scenario-tabs .reset { margin-left:0; }
+  .circuit-panel, .readout-panel { padding:28px 20px; }
+  .work-node { width:112px; }
+  .work-circuit { transform:scale(.86); transform-origin:center; margin-left:-5%; width:110%; }
+  .readout-list li { grid-template-columns:1fr; gap:3px; }
+  .measure-row { grid-template-columns:1fr; gap:8px; }
+  .evidence-trail:before { left:0; }
+  .evidence-item { grid-template-columns:1fr; min-height:auto; }
+  .evidence-org { text-align:left; padding:24px 0 4px 24px; }
+  .evidence-detail { padding:8px 0 28px 24px; }
+  .evidence-detail:before { left:-7px; top:14px; }
+  .question { grid-template-columns:44px 1fr; }
+  .question p { font-size:18px; }
+  .doc-links { grid-template-columns:1fr; }
+  .doc-links a { min-height:130px; border-right:0; }
+  .site-footer { flex-direction:column; padding:28px 20px; }
+  .document-toolbar { align-items:flex-start; flex-direction:column; }
+  .document-stack { padding:18px 0 50px; }
+  .sheet { width:100%; min-height:0; margin:0 0 18px; padding:28px 18px 34px; box-shadow:none; }
+  .doc-header { grid-template-columns:1fr; }
+  .doc-contact { text-align:left; }
+  .doc-brand { right:18px; top:10px; }
+  .resume-grid, .brief-grid, .review-form { grid-template-columns:1fr; }
+  .review-field.wide { grid-column:auto; }
+  .memory-map { grid-template-columns:1fr; }
+  .page-footer { position:static; margin-top:24px; }
+}
+@media print {
+  @page { size: Letter; margin:0; }
+  body, .document-body { background:white !important; }
+  .document-toolbar { display:none !important; }
+  .document-stack { padding:0 !important; }
+  .sheet { width:8.5in !important; height:11in !important; min-height:11in !important; margin:0 !important; padding:.54in .58in .48in !important; box-shadow:none !important; overflow:hidden !important; page-break-after:always; }
+  .sheet:last-child { page-break-after:auto; }
+  .page-footer { position:absolute !important; left:.58in !important; right:.58in !important; bottom:.24in !important; }
+  a { text-decoration:none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  *, *:before, *:after { animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+  .signal-packet { offset-distance:72%; }
+  .memory-trace { transform:none; opacity:.8; }
+}
+
+.review-table { width:100%; border-collapse:separate; border-spacing:8px 7px; margin:0 -8px; }
+.review-table td { width:50%; vertical-align:top; border:1px solid var(--border); padding:8px 10px; height:56px; }
+.review-table td.wide { width:100%; }
+.review-table h3 { margin:0 0 4px; font:700 8.6px/1 var(--display); text-transform:uppercase; letter-spacing:.08em; color:var(--brand-purple-deep); }
+.review-table p { margin:0; color:var(--brand-muted); font-size:8.25px; line-height:1.28; }
+@media print { .review-table { border-spacing:7px 6px; margin:0 -7px; } .review-table td { height:52px; padding:7px 9px; } }
+.review-table td { height: 76px; }
+.review-table tr:first-child td, .review-table tr:last-child td { height: 84px; }
+@media print { .review-table td { height: 72px; } .review-table tr:first-child td, .review-table tr:last-child td { height: 80px; } }
+@media (max-width: 900px) {
+  .document-stack { padding: 18px 0 50px; }
+  .sheet { width: 100%; min-height: 0; margin: 0 0 18px; padding: 32px 28px 42px; box-shadow: none; overflow: visible; }
+  .doc-brand { right: 28px; top: 12px; }
+  .continuation-header { flex-wrap: wrap; gap: 6px 18px; }
+  .plan-table { table-layout: fixed; overflow-wrap: anywhere; }
+  .page-footer { position: static; margin-top: 28px; }
+}
