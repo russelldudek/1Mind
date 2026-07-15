@@ -6,18 +6,26 @@
     "browser_checks": 25,
     "viewports": ["1440x900", "1280x800", "768x1024", "390x844"],
     "interaction": "passed",
+    "loop_nodes": 6,
+    "desktop_laptop_symmetry": "passed",
     "smart_reset": "passed",
     "reduced_motion": "passed",
     "horizontal_overflow": "passed",
     "reciprocal_links": "passed",
+    "entry_plan_workstreams": 5,
+    "entry_plan_html_sheets": 3,
     "candidate_facing_confidentiality": "passed"
   },
   "pdfs": {
     "docs/Russell-Dudek-1mind-Resume.pdf": 2,
     "docs/Russell-Dudek-1mind-Cover-Letter.pdf": 1,
     "docs/Russell-Dudek-1mind-Interview-Thesis-Brief.pdf": 3,
-    "docs/Russell-Dudek-1mind-First-90-Days.pdf": 2,
+    "docs/Russell-Dudek-1mind-First-90-Days.pdf": 3,
     "docs/Russell-Dudek-1mind-AI-Operating-Memory-Review.pdf": 1
   },
-  "publication_boundary": "GitHub accepted connector-authored source commits but did not create an Actions run. Live Pages and public PDF response verification are not claimed."
+  "revision": {
+    "rejected_execution": "Asymmetric five-node oval with loosely placed cards and incomplete visual hierarchy.",
+    "approved_execution": "Symmetric dual-loop system joined through one Accountability Gate; expanded three-page 90-day operating plan."
+  },
+  "publication_boundary": "GitHub accepted connector-authored source commits but did not create a verified Actions run. Live Pages and public PDF response verification are not claimed."
 }
