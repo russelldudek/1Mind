@@ -10,10 +10,13 @@ Build the company's internal continuous memory. Every AI workflow should preserv
 - Exactly two-page role-aligned resume
 - Exactly one-page cover letter
 - Three-page interview thesis brief
-- Two-page first-90-days plan
+- Three-page first-90-days plan
 - One-page AI Operating Memory Review
 - Generated PDF for every printable artifact
 - Brand intelligence, tokens, source notes, interaction code, and campaign audit
+
+## Revision
+The operating-memory visual was rebuilt as a symmetric dual-loop system: Observe / Bound / Build connects through an Accountability Gate to Embed / Verify / Compound. The entry plan now carries decision gates, two pilot types, operating cadence, a balanced scorecard, risk controls, and explicit Day-90 deliverables.
 
 ## Job posting
 https://www.1mind.com/careers?ashby_jid=2b085917-8022-4e12-8a54-06de0722f091&utm_source=AJxj6qZBg9
