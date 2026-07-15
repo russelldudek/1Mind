@@ -1,0 +1,53 @@
+{
+  "campaign": "Russell Dudek candidate vision for 1mind AI Operations Lead",
+  "branch": "main",
+  "routes": [
+    "index.html",
+    "resume.html",
+    "cover-letter.html",
+    "interview-brief.html",
+    "90-day-plan.html",
+    "operating-memory-review.html"
+  ],
+  "downloads": [
+    {
+      "path": "docs/Russell-Dudek-1mind-Resume.pdf",
+      "pages": 2
+    },
+    {
+      "path": "docs/Russell-Dudek-1mind-Cover-Letter.pdf",
+      "pages": 1
+    },
+    {
+      "path": "docs/Russell-Dudek-1mind-Interview-Thesis-Brief.pdf",
+      "pages": 3
+    },
+    {
+      "path": "docs/Russell-Dudek-1mind-First-90-Days.pdf",
+      "pages": 2
+    },
+    {
+      "path": "docs/Russell-Dudek-1mind-AI-Operating-Memory-Review.pdf",
+      "pages": 1
+    }
+  ],
+  "supporting": [
+    "styles.css",
+    "styles-05.css",
+    "styles-04.css",
+    "styles-03.css",
+    "styles-02.css",
+    "styles-01.css",
+    "brand-tokens.css",
+    "app.js",
+    "brand-intelligence.md",
+    "assets/brand/logo-source.txt",
+    "sources.md",
+    "campaign-audit.md",
+    "validation-summary.json",
+    ".github/workflows/pages.yml",
+    ".nojekyll"
+  ],
+  "candidate_vision_url": "https://russelldudek.github.io/1Mind/",
+  "job_posting": "https://www.1mind.com/careers?ashby_jid=2b085917-8022-4e12-8a54-06de0722f091&utm_source=AJxj6qZBg9"
+}
