@@ -42,7 +42,7 @@ jobs:
               'Russell-Dudek-1mind-Resume.pdf': 2,
               'Russell-Dudek-1mind-Cover-Letter.pdf': 1,
               'Russell-Dudek-1mind-Interview-Thesis-Brief.pdf': 3,
-              'Russell-Dudek-1mind-First-90-Days.pdf': 2,
+              'Russell-Dudek-1mind-First-90-Days.pdf': 3,
               'Russell-Dudek-1mind-AI-Operating-Memory-Review.pdf': 1,
           }
           errors = []
