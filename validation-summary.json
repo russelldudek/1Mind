@@ -1,0 +1,23 @@
+{
+  "observed": "2026-07-15",
+  "state": "blocked_live_publication",
+  "local_validation": {
+    "errors": [],
+    "browser_checks": 25,
+    "viewports": ["1440x900", "1280x800", "768x1024", "390x844"],
+    "interaction": "passed",
+    "smart_reset": "passed",
+    "reduced_motion": "passed",
+    "horizontal_overflow": "passed",
+    "reciprocal_links": "passed",
+    "candidate_facing_confidentiality": "passed"
+  },
+  "pdfs": {
+    "docs/Russell-Dudek-1mind-Resume.pdf": 2,
+    "docs/Russell-Dudek-1mind-Cover-Letter.pdf": 1,
+    "docs/Russell-Dudek-1mind-Interview-Thesis-Brief.pdf": 3,
+    "docs/Russell-Dudek-1mind-First-90-Days.pdf": 2,
+    "docs/Russell-Dudek-1mind-AI-Operating-Memory-Review.pdf": 1
+  },
+  "publication_boundary": "GitHub accepted connector-authored source commits but did not create an Actions run. Live Pages and public PDF response verification are not claimed."
+}
