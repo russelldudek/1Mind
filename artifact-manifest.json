@@ -13,11 +13,12 @@
     {"path": "docs/Russell-Dudek-1mind-Resume.pdf", "pages": 2},
     {"path": "docs/Russell-Dudek-1mind-Cover-Letter.pdf", "pages": 1},
     {"path": "docs/Russell-Dudek-1mind-Interview-Thesis-Brief.pdf", "pages": 3},
-    {"path": "docs/Russell-Dudek-1mind-First-90-Days.pdf", "pages": 2},
+    {"path": "docs/Russell-Dudek-1mind-First-90-Days.pdf", "pages": 3},
     {"path": "docs/Russell-Dudek-1mind-AI-Operating-Memory-Review.pdf", "pages": 1}
   ],
   "supporting": [
     "styles.css",
+    "revision.css",
     "styles-01.css",
     "styles-02.css",
     "styles-03.css",
