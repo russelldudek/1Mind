@@ -1,0 +1,71 @@
+name: Generate PDFs and publish campaign
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: candidate-campaign-publish
+  cancel-in-progress: true
+jobs:
+  publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install document dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-inter fonts-lato
+          python -m pip install --upgrade pip
+          python -m pip install weasyprint pypdf
+      - name: Generate printable documents
+        run: |
+          mkdir -p docs
+          weasyprint resume.html docs/Russell-Dudek-1mind-Resume.pdf
+          weasyprint cover-letter.html docs/Russell-Dudek-1mind-Cover-Letter.pdf
+          weasyprint interview-brief.html docs/Russell-Dudek-1mind-Interview-Thesis-Brief.pdf
+          weasyprint 90-day-plan.html docs/Russell-Dudek-1mind-First-90-Days.pdf
+          weasyprint operating-memory-review.html docs/Russell-Dudek-1mind-AI-Operating-Memory-Review.pdf
+      - name: Verify exact page counts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          expected = {
+              'Russell-Dudek-1mind-Resume.pdf': 2,
+              'Russell-Dudek-1mind-Cover-Letter.pdf': 1,
+              'Russell-Dudek-1mind-Interview-Thesis-Brief.pdf': 3,
+              'Russell-Dudek-1mind-First-90-Days.pdf': 2,
+              'Russell-Dudek-1mind-AI-Operating-Memory-Review.pdf': 1,
+          }
+          errors = []
+          for name, pages in expected.items():
+              path = Path('docs') / name
+              actual = len(PdfReader(str(path)).pages) if path.exists() else 0
+              if actual != pages:
+                  errors.append(f'{name}: expected {pages}, found {actual}')
+          if errors:
+              raise SystemExit('\n'.join(errors))
+          print('All PDF page-count contracts passed.')
+          PY
+      - name: Commit generated PDFs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/*.pdf
+          git diff --cached --quiet || git commit -m 'Generate verified campaign PDFs'
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
