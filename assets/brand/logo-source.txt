@@ -1,0 +1,10 @@
+Official 1mind identity source URLs
+
+Primary:
+https://cdn.prod.website-files.com/65d7d10c65b6b8ee3d0ec99b/6a028076bf309beec6f15cef_56eed1079a8231f51446f0cb8b2fb3eb_NewLogo.svg
+
+Alternate:
+https://cdn.prod.website-files.com/65d7d10c65b6b8ee3d0ec99b/6a027590905e300477d6a3c5_37c45f968fa67f1b32382bec35d1bd2f_Frame%203.svg
+
+Build note:
+The current execution environment could not retrieve the CDN bytes, and no unmodified official binary is therefore committed. The campaign uses a clearly typeset employer identifier with an independent-candidate qualifier rather than tracing, redrawing, modifying, or hotlinking the official mark.
