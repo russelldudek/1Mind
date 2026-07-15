@@ -1,5 +1,9 @@
 name: Generate PDFs and publish campaign
 on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/**'
   workflow_dispatch:
 permissions:
   contents: write
